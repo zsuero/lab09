@@ -17,4 +17,19 @@ def main():
           de_pass_arr.append(str(en_pass_num))
       en_pass_str = ''.join(de_pass_arr)
       en_pass = int(en_pass_str)
-      print("Your passoword has been encoded and stored!")
+      print("Your password has been encoded and stored!")
+    if menu_option == 2:
+    
+     
+      password_arr = []
+      for i in range(len(en_pass_str)):
+          encoded = int(en_pass_str[i]) -3
+          password_arr.append(str(encoded))
+      decoded_str = "".join(password_arr)
+      print("The encoded password is"+ en_pass +",and the original password is"+ decoded_str)
+
+    if menu_option == 3:
+      break
+
+if __name__ == __"main"__:
+  main()

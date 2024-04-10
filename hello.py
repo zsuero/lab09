@@ -1,9 +1,11 @@
 def display_menu():
-  print("Menu\n
-        "-------------\n
-        "1. Encode\n
-        "2. Decode\n
+  print("Menu\n"
+        "-------------\n"
+        "1. Encode\n"
+        "2. Decode\n"
         "3. Quit\n")
+
+
 def main():
   while True:
     display_menu()
@@ -26,10 +28,11 @@ def main():
           encoded = int(en_pass_str[i]) -3
           password_arr.append(str(encoded))
       decoded_str = "".join(password_arr)
-      print("The encoded password is"+ en_pass +",and the original password is"+ decoded_str)
+      print("The encoded password is "+ en_pass_str +", and the original password is "+ decoded_str+".")
 
     if menu_option == 3:
       break
 
-if __name__ == __"main"__:
-  main()
+
+if __name__ == '__main__':
+    main()
